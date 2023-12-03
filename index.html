@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="icon">
+                <h1>Currency Converter</h1>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <p>Welcome to Currency Converter between USD and JD</p>
+                <div class="box">
+                    <form action="">
+                        <div class="first">
+                            <input type="number" name="" id="from-number">
+                            <!-- <input list="currency" name="" id="from-currency" value="US Dollar">
+                            <datalist id="currency">
+                                <option value="US Dollar">USD</option>
+                                <option value="denar">JD</option>
+                            </datalist> -->
+                            <select name="currency" id="from-currency">
+                                <option value="US Dollar" >USD</option>
+                                <option value="denar" id="jd-from" selected>JD</option>
+                            </select>
+                        </div>
+                    <!-- arrow -->
+                    <span class="material-symbols-outlined" id="arrow">
+                        autorenew
+                    </span>
+                        <div class="second">
+                        <input type="number" name="" id="to-number">
+                        <!-- <input list="currency" name="" id="to-currency" value="denar">
+                        <datalist id="currency">
+                            <option value="US Dollar">USD</option>
+                            <option value="denar">JD</option>
+                        </datalist> -->
+                        <select name="currency" id="to-currency">
+                            <option value="US Dollar" selected>USD</option>
+                            <option value="denar" >JD</option>
+                        </select>
+                        </div>
+                    </form>
+                </div>
+                <p>1USD = 0.71JD</p>
+                <p>1JD = 1.409USD</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
